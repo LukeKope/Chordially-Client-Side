@@ -1,0 +1,18 @@
+_______
+1. Fix the feed styling to look nicer 
+Weird bug: when you try to play "Wow what a chord: C4, E#4, A#4", it plays, but then
+crashes with an error.
+2. Make it responsive
+- For mobile, switch it to a one column layout, adjust white space accordingly
+
+3. Have it look like sheet music?
+4. Give user feedback if password is wrong
+
+
+
+Functionality
+______________
+1. Let user upload profile image (server side)
+2. Let user play multiple chords (client side)
+3. Add likes
+4. Add comments!
