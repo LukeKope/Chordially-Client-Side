@@ -32,7 +32,7 @@ export default function CreatePost({ uid }) {
         let description = e.currentTarget.description.value.replace(/#/g, "%23");//accounts for if people want to use #'s in their description     
         console.log(title, notes, description);
 
-        axios.get(`https://https://chordially.herokuapp.com/create-post?datePosted=${datePosted}&description=${description}&notes=${notes}&title=${title}&userID=${uid}`) //create a post with the form data and attribute that user's ID
+        axios.get(`https://chordially.herokuapp.com/create-post?datePosted=${datePosted}&description=${description}&notes=${notes}&title=${title}&userID=${uid}`) //create a post with the form data and attribute that user's ID
             .then(function (response) {
                 setPostData(response);
                 console.log(response);
