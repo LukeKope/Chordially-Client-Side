@@ -32,7 +32,7 @@ export function UserInformation({ uid, email }) {
     console.log(uid, contentArray);
     /*MAKE QUERY TO HEROKU FOR THE DATA*/
     function getUserPosts() {
-        axios.get(`https://kope-dynamic-web-final.herokuapp.com/get-all-user-posts/${uid}`) //get all user posts for this specific user's ID
+        axios.get(`https://chordially.herokuapp.com/get-all-user-posts/${uid}`) //get all user posts for this specific user's ID
             .then(function (response) {
                 setUserPosts(response);
                 console.log(response);

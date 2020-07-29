@@ -35,7 +35,7 @@ export function GetFeed({ uid }) { //PASS THE USER DATA YOU NEED INTO {} PROPS
 
 
     function GetFeedQuery() {
-        axios.get(`https://kope-dynamic-web-final.herokuapp.com/`) //Make query to the database to get all posts for the feed
+        axios.get(`https://chordially.herokuapp.com/`) //Make query to the database to get all posts for the feed
             .then(function (response) {
                 setUserPosts(response);
                 console.log(response);
